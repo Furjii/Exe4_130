@@ -52,17 +52,22 @@ namespace Exe4_130
 
         void Display()
         {
-            for (int i = top; i >= 0; i--)
+            for (int i = top; i >= 0; i++)
             {
                 Console.WriteLine(furji[i]);
             }
             if (top == -1)
             {
-                Console.WriteLine("Stack Kosong");
+                Console.WriteLine("Stack Tidak Ada");
             }
         }
         static void Main(string[] args)
         {
+            Stacks s = new Stacks();
+            while (true)
+            {
+
+            }
         }
     }
 }
