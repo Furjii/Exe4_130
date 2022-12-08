@@ -22,9 +22,17 @@ namespace Exe4_130
         public void push()
         {
             string item;
-            if (top == max - 1) ;
+            if (top == max - 1)
             {
                 Console.WriteLine("\nMaksimal Data");
+            }
+            else
+            {
+                Console.WriteLine("Masukkan Data");
+                item = Console.ReadLine();
+                top = top + 1;
+                furji[top] = item;
+                Console.WriteLine("Data telah di Push");
             }
         }
         static void Main(string[] args)
