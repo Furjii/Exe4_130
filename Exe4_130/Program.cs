@@ -19,6 +19,11 @@ namespace Exe4_130
             max = 49;
         }
 
+        public void push()
+        {
+            string item;
+            if (top > max);
+        }
         static void Main(string[] args)
         {
         }
