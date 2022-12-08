@@ -40,7 +40,25 @@ namespace Exe4_130
         {
             if (top == -1)
             {
-                Console.WriteLine("Tidak ada data yag bisa di hapus");
+                Console.WriteLine("Tidak ada data yang bisa di Pop/hapus");
+            }
+
+            else
+            {
+                top = top - 1;
+                Console.WriteLine("Data Telah di Pop/hapus");
+            }
+        }
+
+        void Display()
+        {
+            for (int i = top; i >= 0; i--)
+            {
+                Console.WriteLine(furji[i]);
+            }
+            if (top == -1)
+            {
+                Console.WriteLine("Stack Kosong");
             }
         }
         static void Main(string[] args)
