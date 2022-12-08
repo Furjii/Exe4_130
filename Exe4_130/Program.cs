@@ -35,6 +35,14 @@ namespace Exe4_130
                 Console.WriteLine("Data telah di Push");
             }
         }
+
+        public void pop()
+        {
+            if (top == -1)
+            {
+                Console.WriteLine("Tidak ada data yag bisa di hapus");
+            }
+        }
         static void Main(string[] args)
         {
         }
