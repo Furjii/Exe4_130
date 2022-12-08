@@ -22,7 +22,7 @@ namespace Exe4_130
         public void push()
         {
             string item;
-            if (top == max - 1)
+            if (top == max - 1) //Jika data yang di masukkan sudah maksimal
             {
                 Console.WriteLine("\nMaksimal Data");
             }
@@ -38,7 +38,7 @@ namespace Exe4_130
 
         public void pop()
         {
-            if (top == -1)
+            if (top == -1) //Jika posisi data belum lebih dari indeks 0
             {
                 Console.WriteLine("Tidak ada data yang bisa di Pop/hapus");
             }
@@ -52,13 +52,13 @@ namespace Exe4_130
 
         void Display()
         {
-            for (int i = top; i >= 0; i++)
+            for (int i = top; i >= 0; i--) //Untuk menampilkan posisi indeks array dari kanan ke kiri
             {
                 Console.WriteLine(furji[i]);
             }
             if (top == -1)
             {
-                Console.WriteLine("Stack Tidak Ada");
+                Console.WriteLine("Stack Tidak Ada"); 
             }
         }
         static void Main(string[] args)
