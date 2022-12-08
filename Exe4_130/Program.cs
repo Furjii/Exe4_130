@@ -8,7 +8,7 @@ namespace Exe4_130
 {
     class Stacks
     {
-        private string[] furji;
+        private string[]furji;
         private int top;
         private int max;
 
@@ -52,7 +52,7 @@ namespace Exe4_130
 
         void Display()
         {
-            for (int i = top; i >= 0; i++) //Untuk menampilkan posisi indeks array dari kanan ke kiri
+            for (int i = top; i >= 0; i--) //Untuk menampilkan posisi indeks array dari kanan ke kiri
             {
                 Console.WriteLine(furji[i]);
             }
