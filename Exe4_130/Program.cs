@@ -22,7 +22,10 @@ namespace Exe4_130
         public void push()
         {
             string item;
-            if (top > max);
+            if (top == max - 1) ;
+            {
+                Console.WriteLine("\nMaksimal Data");
+            }
         }
         static void Main(string[] args)
         {
