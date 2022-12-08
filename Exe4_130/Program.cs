@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exe4_130
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
