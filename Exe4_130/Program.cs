@@ -52,13 +52,13 @@ namespace Exe4_130
 
         void Display()
         {
-            for (int i = top; i >= 0; i--) //Untuk menampilkan posisi indeks array dari kanan ke kiri
+            for (int i = top; i >= 0; i++) //Untuk menampilkan posisi indeks array dari kanan ke kiri
             {
                 Console.WriteLine(furji[i]);
             }
             if (top == -1)
             {
-                Console.WriteLine("Stack Tidak Ada"); 
+                Console.WriteLine("Stack Tidak Ada");
             }
         }
         static void Main(string[] args)
@@ -66,6 +66,33 @@ namespace Exe4_130
             Stacks s = new Stacks();
             while (true)
             {
+                Console.WriteLine();
+                Console.WriteLine("\n*** Stack Menu ***\n");
+                Console.WriteLine("1. Push.");
+                Console.WriteLine("2. Pop.");
+                Console.WriteLine("3. Display.");
+                Console.WriteLine("4. Exit.");
+                Console.Write("\nMasukkan Pilihan: ");
+                string sInput = Console.ReadLine();
+                char ch = Convert.ToChar(sInput == "" ? "0" : sInput);
+                switch (ch)
+                {
+                    case '1':
+                        s.push();
+                        break;
+                    case '2':
+                        s.pop();
+                        break;
+                    case '3':
+                        s.Display();
+                        break;
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nPilihan salah");
+                        break;
+
+                }
 
             }
         }
